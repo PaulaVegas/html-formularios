@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios html</title>
+</head>
+<body>
+    <fieldset>
+        <legend><b><h2>El club viejuner</h2></b></legend>
+        <fieldset>
+            <legend><b>Tú:</b></legend>
+            <div tabindex="1">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" autofocus>
+            </div>
+            <div>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Edad">
+            </div>
+            <div>
+                <label for="sexo">Sexo:</label><br>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="masculino"
+                value="Masculino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="femenino"
+                value="Femenino">
+            </div>
+            <div>
+                <label for="viejuner">Me siento viejuner:</label><br>
+                <label for="si">Sí</label>
+                <input type="checkbox" id="si"
+                value="Sí">
+                <label for="no">No</label>
+                <input type="checkbox" id="no"
+                value="NO">
+            </div>
+            <div>
+                <label for="sobreTi">Escribe algo sobre ti:</label><br>
+                <textarea name="sobreTi" placeholder="Escribe algo sobre ti"></textarea>
+            </div>    
+        </fieldset>    
+        <fieldset>
+            <legend><b>Tus circunstancias:</b></legend>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+        </fieldset>        
+        <input type="submit">
+        <input type="reset">    
+    <fieldset>
+        <legend><b><h2>Los ladronzuelos de bicicletas</h2></b></legend>
+        <div>
+            <label for="dia">Día:</label>
+            <input type="date" name="dia" id="dia" placeholder="Día">
+        </div>
+        <div>
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora" placeholder="Hora"> 
+        </div>
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" placeholder="color">
+        </div>
+        <div>
+            <label for="rangoPrecio">Rango de precio:</label><br>
+            <label for="50">50</label>
+            <input type="range" min="50" max="300" step="50">
+            <label for="300">300</label>
+        </div>
+        <div>
+            <label for="tipoBici">Tipo de bicicleta:</label><br>
+            <label for="paseo">Paseo</label>
+            <select name="paseo" id="paseo">
+                <option value=""></option>
+                <option value="señorial">Señorial</option>
+                <option value="antiPlebeyos">Anti-plebeyos</option>
+                <option value="porEncimaDelHombro">PorEncimaDelHombro</option>
+            </select><br>
+            <label for="montaña">Montaña</label>
+            <select name="montaña" id="montaña">
+                <option value=""></option>
+                <option value="gamusinos">Gamusinos</option>
+                <option value="hueleFloresPremium">hueleFloresPremium</option>
+                <option value="fangoLover">Fango lover</option>
+            </select><br>    
+            <label for="carreras">Carreras</label>
+            <select name="carreras" id="carreras">
+                <option value=""></option>
+                <option value="metroYmedio">Metroymedio</option>
+                <option value="fluorescente">3 de la tarde. Fluorescente edition</option>
+                <option value="grupitors">Grupitors</option>
+            </select><br>
+        </div>
+        <div>
+            <label for="accesorios">Accesorios:</label><br>
+            <label for="ruedines">Ruedines</label>
+            <input type="checkbox" id="ruedines"
+            value="Ruedines">
+            <label for="pegatinas">Pegatinas</label>
+            <input type="checkbox" id="pegatinas"
+            value="Pegatinas">
+            <label for="cestita">Cestita</label>
+            <input type="checkbox" id="cestita"
+            value="Cestita">
+            <label for="bomba">Bomba de aire</label>
+            <input type="checkbox" id="bomba"
+            value="Bomba de aire">
+            <label for="timbre">Timbre</label>
+            <input type="checkbox" id="timbre"
+            value="Timbre">
+            <label for="foco">Foco</label>
+            <input type="checkbox" id="foco"
+            value="Foco">           
+        </div>
+        <div>
+            <label for="marca">¿Qué marca era?:</label>
+            <input list="marcas">
+                <datalist id="marcas">
+                    <option value="specialized"></option>
+                    <option value="trek"></option>
+                    <option value="merida"></option>
+                    <option value="scott"></option>
+                    <option value="giant"></option>
+                    <option value="cube"></option>
+                    <option value="lapierre"></option>
+                    <option value="orbea"></option>
+                    <option value="cannondale"></option>
+                    <option value="bmc"></option>
+                    <option value="canyon"></option>
+                    <option value="look"></option>
+                    <option value="protek"></option>
+                    <option value="megamo"></option>
+                    <option value="pinarello"></option>
+                    <option value="bianchi"></option>
+                    <option value="bh"></option>
+                    <option value="factor"></option>
+                    <option value="ghost"></option>
+                    <option value="cervélo"></option>
+                    <option value="argon"></option>
+                </datalist>    
+        </div>
+        <input type="submit">
+        <input type="reset">
+    </fieldset>              
+    </form>
+</body>
+</html>
